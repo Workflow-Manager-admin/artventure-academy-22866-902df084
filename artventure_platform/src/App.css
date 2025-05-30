@@ -76,8 +76,12 @@ body {
 }
 
 .subtitle {
-  color: var(--kavia-orange);
-  font-weight: 500;
+  background: var(--secondary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 600;
   font-size: 1.1rem;
 }
 
