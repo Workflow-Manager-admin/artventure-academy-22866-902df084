@@ -1,15 +1,20 @@
 :root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
+  /* ArtVenture Academy Theme Variables */
+  --primary-bg: #000000;
+  --secondary-gradient: linear-gradient(90deg, #ff0057, #fffd38, #00ff85, #00cfff, #a259ff);
+  --accent-color: #ffffff;
   --text-color: #ffffff;
   --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
+  --border-color: rgba(255, 255, 255, 0.07);
 }
+
+/* Old KAVIA theme variables removed (orange, dark) */
+
 
 body {
   margin: 0;
   font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  background-color: var(--kavia-dark);
+  background-color: var(--primary-bg); /* Main black bg */
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -44,7 +49,12 @@ body {
 }
 
 .logo-symbol {
-  color: var(--kavia-orange);
+  /* Use rainbow gradient text highlight for logo-sigil */
+  background: var(--secondary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .container {
